@@ -15,6 +15,7 @@
     />
 
     <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="assets/vendor/css/aos.css" />
     <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
 
     <!-- Main CSS File -->
@@ -22,25 +23,36 @@
   </head>
 
   <body>
-    <!-- Side NavBar -->
+    <!-- Mobile Nav toggle Button -->
+    <i class="fas fa-bars mobile-nav-toggle d-xl-none"></i>
+
+    <!-- Side Navbar -->
     <header class="d-flex flex-column justify-content-center">
       <nav class="navbar">
         <ul>
           <li>
-            <a href="#home"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="#home" class="scrollto active">
+              <i class="fas fa-home"></i>
+              <span>Home</span>
+            </a>
           </li>
           <li>
-            <a href="#about"
-              ><i class="fas fa-address-card"></i><span>About</span></a
-            >
+            <a href="#about" class="scrollto">
+              <i class="fas fa-address-card"></i>
+              <span>About</span>
+            </a>
           </li>
           <li>
-            <a href="#portfolio"
-              ><i class="fas fa-code"></i><span>Portfolio</span></a
-            >
+            <a href="#portfolio" class="scrollto">
+              <i class="fas fa-code"></i>
+              <span>Portfolio</span>
+            </a>
           </li>
           <li>
-            <a href="#contact"><i class="fas fa-at"></i><span>Contact</span></a>
+            <a href="#contact" class="scrollto">
+              <i class="fas fa-at"></i>
+              <span>Contact</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -48,7 +60,7 @@
 
     <!-- Home Section -->
     <section id="home" class="d-flex flex-column justify-content-center">
-      <div class="container">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
         <h1>Luis Thiago</h1>
         <p>
           I'm a
@@ -59,20 +71,20 @@
         </p>
 
         <div class="social-links">
-          <a href="https://github.com/LThiago">
-            <i class="fab fa-github"></i>
-          </a>
-
           <a href="https://www.linkedin.com/in/lthiagoch/">
             <i class="fab fa-linkedin"></i>
           </a>
 
-          <a href="https://github.com/LThiago">
-            <i class="fab fa-discord"></i>
+          <a href="https://wa.me/5583986607027">
+            <i class="fab fa-whatsapp"></i>
           </a>
 
-          <a href="https://steamcommunity.com/id/xxfarkillerxx/">
-            <i class="fab fa-steam"></i>
+          <a href="https://t.me/LThiago">
+            <i class="fab fa-telegram"></i>
+          </a>
+
+          <a href="https://github.com/LThiago">
+            <i class="fab fa-github"></i>
           </a>
         </div>
       </div>
@@ -93,15 +105,17 @@
             <div class="col-lg-10 pt-4 pt-lg-0 content">
               <p>
                 Luis Thiago is awful at writing bios, hates referring to himself
-                in the third person, but is good at doing what he's told. So...
+                in the third person, but he is good at doing what he's told.
+                So...
               </p>
               <p>
-                He is a Computer Science student who in his spare time likes to
-                work on personal projects and play some video-games. He loves
-                all kinds of technologies and gadgets, he also is extremely
+                He is a Computer Science student who likes to work on personal
+                projects and play some video-games in his spare time. He loves
+                all kinds of technologies and gadgets, he is also extremely
                 passionate about linux (he uses Arch btw but love to
-                distro-hop), and last but not least, he is in a journey to
-                become a awesome Full-Stack Developer and a dope Game Developer.
+                distro-hop), and last but not least, he is on a journey to
+                become an awesome Full-Stack Developer and a dope Game
+                Developer.
               </p>
             </div>
           </div>
@@ -163,40 +177,39 @@
           </div>
 
           <div
-            id="carouselExampleCaptions"
+            id="portfolioCarousel"
             class="carousel slide"
             data-bs-ride="carousel"
           >
             <div class="carousel-indicators">
               <button
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#portfolioCarousel"
                 data-bs-slide-to="0"
                 class="active"
                 aria-current="true"
                 aria-label="Slide 1"
               ></button>
+
               <button
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#portfolioCarousel"
                 data-bs-slide-to="1"
                 aria-label="Slide 2"
               ></button>
             </div>
+
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <a
-                  href="https://github.com/LThiago/imersao-game-dev"
-                  class="project1"
-                >
+                <a href="https://github.com/LThiago/imersao-game-dev">
                   <img
-                    src="assets/img/javascript-game.png"
+                    src="assets/img/hipsta-witch.png"
                     class="d-block w-100"
-                    alt="Game Image"
+                    alt="Hipsta Witch Screenshot"
                   />
                 </a>
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>JavaScript Game</h5>
+                  <h5>A Bruxa Hipsta</h5>
                   <p>
                     A simple endless runner game made using JavaScript and
                     p5.js.
@@ -205,38 +218,35 @@
               </div>
 
               <div class="carousel-item">
-                <a
-                  href="https://github.com/LThiago/LThiago.github.io"
-                  class="project2"
-                >
+                <a href="https://github.com/LThiago/LThiago.github.io">
                   <img
-                    src="assets/img/personal-website-img.png"
+                    src="assets/img/my-personal-website.png"
                     class="d-block w-100"
-                    alt="Website Image"
+                    alt="..."
                   />
                 </a>
                 <div class="carousel-caption d-none d-md-block">
                   <h5>My Personal website</h5>
-                  <p>Checkout the source code.</p>
+                  <p>Source code of my personal website.</p>
                 </div>
               </div>
             </div>
+
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#carouselExampleCaptions"
+              data-bs-target="#portfolioCarousel"
               data-bs-slide="prev"
             >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+              </span>
               <span class="visually-hidden">Previous</span>
             </button>
+
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#carouselExampleCaptions"
+              data-bs-target="#portfolioCarousel"
               data-bs-slide="next"
             >
               <span
@@ -260,12 +270,20 @@
             will get back to you as soon as possible!
           </p>
           <div class="social-links">
-            <a href="https://github.com/LThiago" class="github">
-              <i class="fab fa-github"></i>
-            </a>
-
             <a href="https://www.linkedin.com/in/lthiagoch/">
               <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://wa.me/5583986607027">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <a href="https://t.me/LThiago">
+              <i class="fab fa-telegram"></i>
+            </a>
+
+            <a href="https://github.com/LThiago">
+              <i class="fab fa-github"></i>
             </a>
 
             <a href="https://www.instagram.com/lthiagoch/">
@@ -283,7 +301,7 @@
 
           <p>Also, download my resume if you want.</p>
           <a
-            class="btn btn-light"
+            class="btn btn-lg btn-light"
             href="https://drive.google.com/file/d/1odngdJSTPV16EC5BlYmbgMPXayUJsCwE/view?usp=sharing"
             role="button"
             >Download Resume</a
@@ -294,8 +312,8 @@
 
     <!-- Footer -->
     <footer>
-      <div class="container-fluid py-5">
-        <div class="small text-center text-muted">
+      <div class="container-fluid">
+        <div class="text-center">
           <p>
             Luis Thiago &copy; 2021 - <span id="copyright-year"></span>. All
             rights reserved. Powered by
@@ -310,6 +328,15 @@
       </div>
     </footer>
 
+    <!-- Preloader Icon -->
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
     <!-- Generate Actual Year -->
     <script>
       document.getElementById(
@@ -318,6 +345,7 @@
     </script>
 
     <!-- Vendor JS Files -->
+    <script src="assets/vendor/js/aos.js"></script>
     <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/js/fontawesome.min.js"></script>
     <script src="assets/vendor/js/typed.min.js"></script>

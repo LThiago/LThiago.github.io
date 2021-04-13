@@ -6,29 +6,136 @@ body {
 
 a {
   text-decoration: none;
-  color: #8ab4f8;
+  color: #5982c3;
 }
 
 a:hover {
-  color: #8ab4f8;
+  text-decoration: none;
+  color: #5982c3;
+}
+
+/*
+  Back to top button
+*/
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #5982c3;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #e0e0e0;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #5982c3;
+  color: #e0e0e0;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*
+  Preloader
+*/
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #121212;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #5982c3;
+  border-top-color: #121212;
+  border-bottom-color: #121212;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*
+  Disable AOS on mobile
+*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
 }
 
 /* 
   Navigation Menu 
 */
 
-header {
-  z-index: 10;
+/*
+  - Header
+*/
 
+header {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  padding: 15px;
-
+  z-index: 9997;
   transition: all 0.5s;
+  padding: 15px;
   overflow-y: auto;
 }
+
+@media (max-width: 992px) {
+  header {
+    width: 200px;
+    background: #121212;
+    border-right: 1px solid #5982c3;
+    left: -200px;
+  }
+}
+
+/*
+  - Desktop Navigation 
+*/
 
 nav {
   display: block;
@@ -72,7 +179,7 @@ nav a i {
 
 nav a span {
   padding: 0 5px 0 7px;
-  color: #121212;
+  color: #e0e0e0;
 }
 
 @media (min-width: 992px) {
@@ -81,32 +188,66 @@ nav a span {
   }
   nav a span {
     display: none;
-    color: #121212;
+    color: #e0e0e0;
   }
 }
 
 nav a:hover,
 nav .active,
 nav li:hover > a {
-  color: #121212;
-  background: #8ab4f8;
+  color: #e0e0e0;
+  background: #5982c3;
 }
 
 nav a:hover span,
 nav .active span,
 nav li:hover > a span {
-  color: #121212;
+  color: #e0e0e0;
 }
 
 nav a:hover,
 nav li:hover > a {
   width: 100%;
-  color: #121212;
+  color: #e0e0e0;
 }
 
 nav a:hover span,
 nav li:hover > a span {
   display: block;
+}
+
+/*
+  - Mobile Navigation 
+*/
+
+.mobile-nav-toggle {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 9998;
+
+  border: 0;
+  background: none;
+  font-size: 28px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 0;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active header {
+  left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle {
+  color: #e0e0e0;
+  background-color: #5982c3;
 }
 
 /* 
@@ -154,7 +295,7 @@ nav li:hover > a span {
 }
 
 #home p span {
-  color: #8ab4f8;
+  color: #5982c3;
   letter-spacing: 1px;
 }
 
@@ -172,7 +313,7 @@ nav li:hover > a span {
 }
 
 #home .social-links a:hover {
-  color: #8ab4f8;
+  color: #5982c3;
 }
 
 @media (max-width: 992px) {
@@ -231,7 +372,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #8ab4f8;
+  background: #5982c3;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -255,8 +396,9 @@ section {
 /* 
   Portfolio
 */
-
-#portfolio {
+#portfolio img {
+  object-fit: cover;
+  opacity: 0.5;
 }
 
 /* 
@@ -267,6 +409,7 @@ section {
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
+  padding-bottom: 100px;
 }
 
 #contact p {
@@ -292,7 +435,7 @@ section {
 }
 
 #contact .social-links a:hover {
-  color: #8ab4f8;
+  color: #5982c3;
   text-decoration: none;
 }
 
@@ -304,8 +447,8 @@ section {
 
 #contact .btn:hover {
   color: #121212;
-  background-color: #8ab4f8;
-  border-color: #8ab4f8;
+  background-color: #5982c3;
+  border-color: #5982c3;
 }
 
 /* 
@@ -313,5 +456,6 @@ section {
 */
 
 footer p {
+  padding-top: 200px;
   color: #e0e0e0;
 }
