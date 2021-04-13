@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Luis Thiago</title>
+
+    <!-- Google Fonts Import -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Side NavBar -->
+    <header class="d-flex flex-column justify-content-center">
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="#home"><i class="fas fa-home"></i><span>Home</span></a>
+          </li>
+          <li>
+            <a href="#about"
+              ><i class="fas fa-address-card"></i><span>About</span></a
+            >
+          </li>
+          <li>
+            <a href="#portfolio"
+              ><i class="fas fa-code"></i><span>Portfolio</span></a
+            >
+          </li>
+          <li>
+            <a href="#contact"><i class="fas fa-at"></i><span>Contact</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="d-flex flex-column justify-content-center">
+      <div class="container">
+        <h1>Luis Thiago</h1>
+        <p>
+          I'm a
+          <span
+            class="typed"
+            data-typed-items="Developer, Tech Enthusiast, Gamer"
+          ></span>
+        </p>
+
+        <div class="social-links">
+          <a href="https://github.com/LThiago">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/lthiagoch/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a href="https://github.com/LThiago">
+            <i class="fab fa-discord"></i>
+          </a>
+
+          <a href="https://steamcommunity.com/id/xxfarkillerxx/">
+            <i class="fab fa-steam"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>About</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <img src="assets/img/profile-img.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-lg-10 pt-4 pt-lg-0 content">
+              <p>
+                Luis Thiago is awful at writing bios, hates referring to himself
+                in the third person, but is good at doing what he's told. So...
+              </p>
+              <p>
+                He is a Computer Science student who in his spare time likes to
+                work on personal projects and play some video-games. He loves
+                all kinds of technologies and gadgets, he also is extremely
+                passionate about linux (he uses Arch btw but love to
+                distro-hop), and last but not least, he is in a journey to
+                become a awesome Full-Stack Developer and a dope Game Developer.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4">
+              <i class="fas fa-university fa-4x text-white"></i>
+
+              <h3 class="text-white mt-2">Education</h3>
+
+              <p class="text-white">
+                Computer Science Student at <br />
+                <a class="" href="http://www.uepb.edu.br/"
+                  >Universidade Estadual da Paraíba</a
+                >
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4">
+              <i class="fas fa-code fa-4x text-white"></i>
+
+              <h3 class="text-white mt-2">Programming Languages</h3>
+
+              <p class="text-white">
+                Java - JavaScript - Python - SQL - PHP - C++ - Go - C - R
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4">
+              <i class="far fa-file-code fa-4x text-white"></i>
+
+              <h3 class="text-white mt-2">Skills</h3>
+
+              <p class="text-white mt-2">
+                HTML5 - CSS3 - Docker - NodeJS - React - Android - Git - Linux -
+                Photoshop
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4">
+              <i class="fas fa-language fa-4x text-white"></i>
+
+              <h3 class="text-white">Languages</h3>
+
+              <p class="text-white mt-2">
+                Portuguese - Native <br />
+                English - Fluent
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Portfolio</h2>
+          </div>
+
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a
+                  href="https://github.com/LThiago/imersao-game-dev"
+                  class="project1"
+                >
+                  <img
+                    src="assets/img/javascript-game.png"
+                    class="d-block w-100"
+                    alt="Game Image"
+                  />
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>JavaScript Game</h5>
+                  <p>
+                    A simple endless runner game made using JavaScript and
+                    p5.js.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <a
+                  href="https://github.com/LThiago/LThiago.github.io"
+                  class="project2"
+                >
+                  <img
+                    src="assets/img/personal-website-img.png"
+                    class="d-block w-100"
+                    alt="Website Image"
+                  />
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>My Personal website</h5>
+                  <p>Checkout the source code.</p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact</h2>
+          </div>
+          <p>
+            Like my profile? Contact me in one of my social media profiles and I
+            will get back to you as soon as possible!
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/LThiago" class="github">
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/lthiagoch/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://www.instagram.com/lthiagoch/">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://github.com/LThiago">
+              <i class="fab fa-discord"></i>
+            </a>
+
+            <a href="https://steamcommunity.com/id/xxfarkillerxx/">
+              <i class="fab fa-steam"></i>
+            </a>
+          </div>
+
+          <p>Also, download my resume if you want.</p>
+          <a
+            class="btn btn-light"
+            href="https://drive.google.com/file/d/1odngdJSTPV16EC5BlYmbgMPXayUJsCwE/view?usp=sharing"
+            role="button"
+            >Download Resume</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid py-5">
+        <div class="small text-center text-muted">
+          <p>
+            Luis Thiago &copy; 2021 - <span id="copyright-year"></span>. All
+            rights reserved. Powered by
+            <a href="https://getbootstrap.com/">Bootstrap</a>.
+
+            <br />
+
+            Source on
+            <a href="https://github.com/LThiago/LThiago.github.io">GitHub</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Generate Actual Year -->
+    <script>
+      document.getElementById(
+        "copyright-year"
+      ).innerHTML = new Date().getFullYear();
+    </script>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/js/fontawesome.min.js"></script>
+    <script src="assets/vendor/js/typed.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
