@@ -1,0 +1,24 @@
+{
+  "name": "lthiago.github.io",
+  "version": "1.0.0",
+  "description": "In this repository you will find the source code of my personal website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LThiago/LThiago.github.io.git"
+  },
+  "author": "Luis Thiago <LThiagoCH@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LThiago/LThiago.github.io/issues"
+  },
+  "homepage": "https://github.com/LThiago/LThiago.github.io#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.2",
+    "typed.js": "^2.0.12"
+  }
+}
